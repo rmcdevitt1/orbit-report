@@ -15,4 +15,14 @@ export class Satellite {
         this.launchDate = launchDate;
     }
 
+
+    shouldShowWarning() {
+        if(this.type.toUpperCase() === "SPACE DEBRIS") {
+            return true;
+        }
+    }
+
+
+
+
 }
